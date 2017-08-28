@@ -7,6 +7,7 @@ addition=intger1+integer2
 
 print("Addition of two numbers ",addition )
 
+print("Awesome")
 
 
 
