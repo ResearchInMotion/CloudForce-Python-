@@ -1,0 +1,2 @@
+Learn all the things which are on the
+link - https://www.tutorialspoint.com/python/python_lists.htm
