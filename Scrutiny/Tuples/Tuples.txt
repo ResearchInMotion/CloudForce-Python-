@@ -1,0 +1,5 @@
+completes all the phases of
+https://www.tutorialspoint.com/python/python_tuples.htm
+https://www.programiz.com/python-programming/tuple
+
+make sure of test tomorrow
