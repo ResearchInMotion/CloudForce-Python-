@@ -1,49 +1,39 @@
-emp = []
+class emp:
+    def __init__(s):
+        s.Roll_number = 0
+        s.Name = ''
+        s.Address = ''
+        s.City=''
+        s.Country=''
+
+    def inp(s):
+        s.Roll_number = input('Enter the Roll Number of the student : ')
+        s.Name = input('Enter the name of the student : ')
+        s.Address = input('Enter the Address of the student : ')
+        s.City=input('Enter the City of the student :')
+        s.Country=input('Enter the Address of the student :')
+
+    def disp(this):
+        print(this.Roll_number)
+        print(this.Name)
+        print(this.Address)
+        print(this.City)
+        print(this.Country)
+
+    def getRollNumber(s):
+        return s.Roll_number
 
 
-emp = [['Roll Number', 'Name', 'Address', "City" , "Country"]]
+eo = []
+s = int(input('enter the strength of the class  '))
 
-f = True
-while f:
-    print("Hey Welcome Dude/Gorgeous <3 <3")
-    print("Please Press Y to add up the data , though data is expensive huh !!",end="\n\n")
-    print("Please Press N , If you are fed up !!" , end="\n\n")
-    print("Please Press F , oh no this word is only to find the data which you have uploaded , dirty mind !! ",end="\n\n")
+for i in range(0, s):
+    o = emp()
+    o.inp()
+    eo.append(o)
 
-    ch = input('Hey Whatsup ! What you have decided : ')
-
-    if ch == 'N':
-        f = False
-
-    elif ch == 'Y':
-        row = []
-        rollnumber = int(input('Please enter the roll number '))
-        name = input('Please enter the name ')
-        Address = input('Please enter the address ')
-        City=input("Please enter the city ")
-        Country=input("Please enter the country ")
-
-        row.append(rollnumber)
-        row.append(name)
-        row.append(Address)
-        row.append(City)
-        row.append(Country)
-
-        emp.append(row)
-
-    elif ch=='F':
-        Choice=input("If you want to visualize the content,Please press V : ")
-        if(Choice=='V'):
-            roll= input("Please enter the roll number of the student : ")
-            for i in range(1, len(emp)):
-                    if(emp[i][0]==roll):
-                        print(emp[i])
-
-
-
-    else:
-        print('invalid input you idiot, please choose from above options , look I am using "Please" ')
-
-
-
-
+sid = input('enter id to search :')
+for i in eo:
+    if i.getRollNumber() == sid:
+        i.disp()
+print("Thanks for your time",end="\n\n")
