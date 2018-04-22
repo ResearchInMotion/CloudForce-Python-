@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check</title>
+</head>
+<body>
+
+{% macro render_dict(dictionary) %}
+<table>
+    <tr>
+
+        <th>name</th>
+        <th>value</th>
+        <th>comments</th>
+
+    </tr>
+
+    {% for key , val in dictionary.items() %}
+
+    <tr>
+        <td>{{ key }}</td>
+        <td>{{ val }}</td>
+        {% if val <= 26 %}
+            <td>short</td>
+        {% elif val <=27 and val<=50 %}
+            <td>medium</td>
+        {% else %}
+            <td style="color: brown">long</td>
+        {% endif %}
+
+    </tr>
+    {% endfor %}
+</table>
+
+{% endmacro %}
+
+</body>
+</html>
