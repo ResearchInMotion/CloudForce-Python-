@@ -1,12 +1,13 @@
-Person_Salary1=int(input("Salary of person "))
+Salary = int(input("Please enter the salary : "))
+
+if((Salary>5000) & (Salary<10000)):
+    hra=Salary*0.10
+    da=Salary*0.05
 
 
-if(Person_Salary1<=10000):
-    print("The HRA and DA is 10% and 5% respectively")
-elif(Person_Salary1>10000 and Person_Salary1<16000):
-    print("The HRA and DA is 15% and 8 % respectively")
-else:
-    print("he is super rich")
+elif((Salary>10001) & (Salary<15000)):
+    hra = Salary * 0.15
+    da = Salary * 0.08
 
-
-
+print("The HRA is " ,hra )
+print("The DA is ",da)

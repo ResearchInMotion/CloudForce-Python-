@@ -1,5 +1,6 @@
-age=int(input("Please enter the age of person "))
-if(age<18):
-    print("not eligible for license")
+Age = int(input("Please enter the number : "))
+
+if(Age<18):
+    print("Not eligible")
 else:
-    print("eligible for license")
+    print("Eligible")
