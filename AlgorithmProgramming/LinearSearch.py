@@ -13,6 +13,7 @@ arr=[]
 
 limit = int(input("Please enter the number : "))
 
+
 for values in range(0,limit):
 
     arr.append(int(input("Please enter the elements : ")))
